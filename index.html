@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sul's portfolio</title>
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+            
+            background: rgb(224, 235, 232);
+        }
+        header{
+            height: 150px;
+            background: rgb(46, 186, 154);
+            position: relative;
+        }
+        li{
+            height: 50px;
+            width: 150px;
+            display: inline-block;
+            position: relative;
+            font-weight:bold;
+            font-size:35px;
+            color : rgb(224, 235, 232);
+        }
+        .logo{
+            padding-left: 10%;
+            height: 100%;
+            width: 150px;
+            position: relative;
+        }
+        .logo img{
+            display: inline-block;
+            position: absolute;
+            height: 80%;
+            width: auto;
+            top:50%;
+            transform: translateY(-50%);
+        }
+        .logo h1{
+            padding:0;
+            margin :0;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width:200px;
+            transform: translateY(-50%);
+            color:rgb(224, 235, 232);
+        }
+        header ul{
+            padding:0;
+            margin : 0;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .menu span{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            transition: 0.5s;
+        }
+        .menu span:hover{
+           
+            color:rgb(20, 85, 68)
+        }
+        .logo>div{
+            height: auto;
+            width:2px;
+        }
+        footer{
+            background: rgb(46, 186, 154);
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            bottom: 0%;
+        }
+        footer>span{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #contact{
+            text-align: center ;
+        }
+        .about{
+            display: inline;
+            padding-top: 30px;
+        }
+        .about #jung{
+            display: inline-block;
+            padding-top: 30px;
+            width: 40%;
+        }
+        h2{
+            font-size:40px;
+            color:rgb(57, 164, 136);
+        }
+        #about{
+            position: relative;
+        }
+        #about div{
+            background: rgb(142, 202, 186);
+            width: 80%;
+            position: absolute;
+            top:0%;
+            left: 10%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="캐릭터.png" alt="Sul">
+            <div> </div>
+            
+            <h1>SSul's page</h1>
+        </div>
+        <ul class="menu">
+            <li><span>About</span></li>
+            <li><span>Portfolio</span></li>
+            <li><span>Contact</span></li>
+        </ul>
+    </header>
+    <section id="About"> <!--내 소개, 할수있는것 이력 다 넣기-->
+        <div>
+            <img id="jung"src="jung.jpg" alt="img">
+        </div>
+    </section>
+    <section id="Portfolio">
+
+    </section>
+    <section id="contact">
+        <div><h2>Contact<h2></div>
+        <div><span>syhwan@kakao.com</span></div>
+        <div><span>010.6657.7514</span></div>
+    </section>
+    
+    <footer>
+        <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
+    </footer>
+</body>
+</html>
