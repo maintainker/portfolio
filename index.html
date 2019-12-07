@@ -12,6 +12,10 @@
             
             background: rgb(224, 235, 232);
         }
+        section,header,footer>div{
+            padding-left: 300px;
+            padding-right:300px;
+        }
         header{
             height: 150px;
             background: rgb(46, 186, 154);
@@ -19,11 +23,10 @@
         }
         li{
             height: 50px;
-            width: 150px;
+            width: 130px;
             display: inline-block;
             position: relative;
-            font-weight:bold;
-            font-size:35px;
+            font-size:20px;
             color : rgb(224, 235, 232);
         }
         .logo{
@@ -54,7 +57,7 @@
             padding:0;
             margin : 0;
             position: absolute;
-            right: 10%;
+            right: 15%;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -66,8 +69,7 @@
             transition: 0.5s;
         }
         .menu span:hover{
-           
-            color:rgb(20, 85, 68)
+            color:rgb(28, 133, 105)
         }
         .logo>div{
             height: auto;
@@ -77,40 +79,45 @@
             background: rgb(46, 186, 154);
             position: absolute;
             height: 60px;
-            width: 100%;
+            width:100%;
             bottom: 0%;
+            left:0%;
         }
-        footer>span{
+        footer span{
+            color:white;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
         }
+        footer a{
+            color: white;
+        }
         #contact{
             text-align: center ;
         }
-        .about{
+        #about{
             display: inline;
             padding-top: 30px;
-        }
-        .about #jung{
-            display: inline-block;
-            padding-top: 30px;
-            width: 40%;
         }
         h2{
             font-size:40px;
             color:rgb(57, 164, 136);
         }
-        #about{
-            position: relative;
-        }
-        #about div{
-            background: rgb(142, 202, 186);
-            width: 80%;
-            position: absolute;
+        #id_card{
+            padding:5%;
+            margin-top: 5%;
+            background:red;
+            width: 48%;
             top:0%;
             left: 10%;
+        }
+        #jung{
+            display:inline-block;
+            width:27%;
+        }
+        #id_card span{
+            display:block;
         }
         
     </style>
@@ -131,8 +138,15 @@
         </ul>
     </header>
     <section id="About"> <!--내 소개, 할수있는것 이력 다 넣기-->
-        <div>
+        <div id="id_card">
+            <h1>Who is SSul?</h1>
             <img id="jung"src="jung.jpg" alt="img">
+            <ul id="inf_list">
+                <li><h1>설영환</h1></li>
+                <li>Front-End Developer[신입]</li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </section>
     <section id="Portfolio">
@@ -145,7 +159,9 @@
     </section>
     
     <footer>
-        <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
+        <div>
+            <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
+        </div>
     </footer>
 </body>
 </html>
