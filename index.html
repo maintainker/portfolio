@@ -1,167 +1,447 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Sul's portfolio</title>
+
     <style>
+
         html, body{
+
             padding: 0;
+
             margin: 0;
-            
+
+            text-align: center;
+
             background: rgb(224, 235, 232);
-        }
-        section,header,footer>div{
-            padding-left: 300px;
-            padding-right:300px;
-        }
-        header{
-            height: 150px;
-            background: rgb(46, 186, 154);
+
             position: relative;
+
         }
-        li{
-            height: 50px;
-            width: 130px;
-            display: inline-block;
+
+        section{
+
             position: relative;
-            font-size:20px;
-            color : rgb(224, 235, 232);
+
         }
-        .logo{
-            padding-left: 10%;
+
+        .container{
+
+            width:1240px;
+
             height: 100%;
-            width: 150px;
+
+            display: block;
+
             position: relative;
-        }
-        .logo img{
-            display: inline-block;
-            position: absolute;
-            height: 80%;
-            width: auto;
-            top:50%;
-            transform: translateY(-50%);
-        }
-        .logo h1{
-            padding:0;
-            margin :0;
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            width:200px;
-            transform: translateY(-50%);
-            color:rgb(224, 235, 232);
-        }
-        header ul{
-            padding:0;
-            margin : 0;
-            position: absolute;
-            right: 15%;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .menu span{
-            position: absolute;
-            top:50%;
+
             left:50%;
-            transform: translate(-50%,-50%);
-            transition: 0.5s;
+
+            transform: translateX(-50%);
+
         }
-        .menu span:hover{
-            color:rgb(28, 133, 105)
-        }
-        .logo>div{
-            height: auto;
-            width:2px;
-        }
-        footer{
+
+        header{
+
+            height: 150px;
+
+            width: 100%;
+
             background: rgb(46, 186, 154);
-            position: absolute;
-            height: 60px;
-            width:100%;
-            bottom: 0%;
-            left:0%;
+
+            position: fixed;
+
+            top:0;
+
         }
-        footer span{
-            color:white;
+
+        .logo{
+
+            height: 100%;
+
+
+        }
+
+        .logo img{
+
             position: absolute;
-            left: 50%;
+
             top: 50%;
-            transform: translate(-50%,-50%);
+
+            left:-50%;
+
+            transform: translateY(-50%);
+
+            height: 80%;
+
+            width: auto;
+
         }
-        footer a{
-            color: white;
+
+        .logo>div:first-child{
+
+            width: 7%;
+
+            display: inline-block;
+
+            position: relative;
+
+            height:100%;
+
+            color:rgb(224, 235, 232);
+
+        }        
+
+        .logo>div:nth-child(2){
+
+            width: 20%;
+
+            display: inline-block;
+
+            position: relative;
+
+            height:100%;
+
+            color:rgb(224, 235, 232);
+
         }
-        #contact{
-            text-align: center ;
+
+        .logo>div:last-child{
+
+            width: 70%;
+
+            display: inline-block;
+
+            position: relative;
+
+            height:100%;
+
+            color:rgb(224, 235, 232);
+
         }
-        #about{
-            display: inline;
-            padding-top: 30px;
+
+        .logo>div>h1{
+
+            padding:0;
+
+            margin:0;
+
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            left: 0;
+
         }
-        h2{
-            font-size:40px;
-            color:rgb(57, 164, 136);
+
+        .logo>div>ul{
+
+            width: 50%;
+
+            padding:0;
+
+            margin:0;
+
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            right: 0%;
+
         }
-        #id_card{
-            padding:5%;
-            margin-top: 5%;
-            background:red;
-            width: 48%;
-            top:0%;
-            left: 10%;
-        }
-        #jung{
-            display:inline-block;
-            width:27%;
-        }
-        #id_card span{
-            display:block;
-        }
+
+        .logo li{
+
+            width: 25%;
+
+            left:0;
+
+            display: inline-block;
+
+            height: 100%;
+
+            text-decoration: none;
+
+            font-size: 23px;
+
         
+
+        }
+
+        .menu span{
+
+            transition:0.5s;
+
+        }
+
+        .menu span:hover{
+
+            color:rgb(28, 133, 105)
+
+        }
+
+        #contact{
+
+            padding-bottom: 100px;
+
+            width: 100%;
+
+            display: block;
+
+            bottom:60px;
+
+            text-align: center ;
+
+            font-size: 25px;
+
+        }
+
+        #contact span{
+
+            display: block;
+
+            padding-bottom:10px;
+
+        }
+
+        h2{
+
+            display: block;
+
+            font-size:40px;
+
+            color:rgb(57, 164, 136);
+
+            padding-top:10px;
+
+        }
+
+
+        footer{
+
+            background: rgb(46, 186, 154);
+
+            position: absolute;
+
+            height: 60px;
+
+            width:100%;
+
+            bottom: 0%;
+
+            left:0%;
+
+        }
+
+        footer span{
+
+            color:white;
+
+            position: absolute;
+
+            left: 50%;
+
+            top: 50%;
+
+            transform: translate(-50%,-50%);
+
+        }
+
+        footer a{
+
+            color: white;
+
+        }
+
+        #about{
+
+            width:100%;
+
+        }
+
+        .wrap{
+
+            display: block;
+
+            height: 1000px;
+
+            position: relative;
+
+        }
+
+        #id_card{
+
+            background:red;
+
+            width: 60%;
+
+            height: 50%;
+
+            position: absolute;
+
+            top: 10px;
+
+            left:2%;
+
+            color:white;
+
+        }
+
+        #id_card img{
+
+            width: 30%;
+
+            position: absolute;
+
+            left: 10%;
+
+            top:25%;
+
+        }
+
+        #id_card ul{
+
+            display: inline-block;
+
+            position: relative;
+
+            left:10%;
+
+            text-align: left;  
+
+        }
+
+        #id_card li{
+
+            
+
+            text-decoration: none;
+
+        }
+
     </style>
+
 </head>
+
 <body>
+
     <header>
-        <div class="logo">
-            
-            <img src="캐릭터.png" alt="Sul">
-            <div> </div>
-            
-            <h1>SSul's page</h1>
+
+        <div class="container">
+
+            <div class="logo">
+
+                <div>
+
+                    <img src="캐릭터.png" alt="Sul">
+
+                </div>
+
+                <div>        
+
+                    <h1>SSul's page</h1>
+
+                </div>
+
+                <div>
+
+                    <ul class="menu">
+
+                        <li><span>About</span></li>
+
+                        <li><span>Portfolio</span></li>
+
+                        <li><span>Contact</span></li>
+
+                    </ul>            
+
+                </div>
+
+            </div>
+
         </div>
-        <ul class="menu">
-            <li><span>About</span></li>
-            <li><span>Portfolio</span></li>
-            <li><span>Contact</span></li>
-        </ul>
+
     </header>
-    <section id="About"> <!--내 소개, 할수있는것 이력 다 넣기-->
-        <div id="id_card">
-            <h1>Who is SSul?</h1>
-            <img id="jung"src="jung.jpg" alt="img">
-            <ul id="inf_list">
-                <li><h1>설영환</h1></li>
-                <li>Front-End Developer[신입]</li>
-                <li></li>
-                <li></li>
-            </ul>
+
+    <section id="about"> <!--내 소개, 할수있는것 이력 다 넣기-->
+
+       <div class="container">
+
+            <h2>About</h2>
+
+            <div class="wrap">
+
+                <div id="id_card">
+
+                    <h1>Who is SSul?</h1>
+
+                    <img id="jung"src="jung.jpg" alt="img">
+
+                    <ul id="inf_list">
+
+                        <li><h1>설영환</h1></li>
+
+                        <li>Front-End Developer [신입]</li>
+
+                        <li></li>
+
+                        <li></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
-    </section>
-    <section id="Portfolio">
 
     </section>
-    <section id="contact">
-        <div><h2>Contact<h2></div>
-        <div><span>syhwan@kakao.com</span></div>
-        <div><span>010.6657.7514</span></div>
+
+    <section id="Portfolio">
+
+
     </section>
-    
-    <footer>
-        <div>
-            <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div><h2>Contact<h2></div>
+
+            <div><span>syhwan@kakao.com</span></div>
+
+            <div><span>010.6657.7514</span></div>
+
         </div>
+
+    </section>
+
+    
+
+    <footer>
+
+        <div class="container">
+
+            <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
+
+        </div>
+
     </footer>
+
 </body>
+
 </html>
