@@ -1,0 +1,248 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: rgb(224, 235, 232);
+    position: relative;
+}
+section{
+    position: relative;
+}
+.container{
+    width:1240px;
+    height: 100%;
+    display: block;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+h2{
+    display: block;
+    font-size:60px;
+    color:rgb(57, 164, 136);
+    padding-top:10px;
+}
+a{
+    text-decoration: none;;
+}
+/*상단 메뉴바 시작*/
+header{
+    height: 150px;
+    width: 100%;
+    background: rgb(46, 186, 154);
+    position: fixed;
+    top:0;
+    z-index: 5;
+    transition: 0.3s;
+}
+.nav.on{
+    
+    background: rgba(46, 186, 154,0.6);
+    height: 100px;
+}
+.logo{
+    height: 100%;
+}
+.logo img{
+    position: absolute;
+    top: 50%;
+    left:-20%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: auto;
+}
+.logo>div:first-child{
+    width: 7%;
+    display: inline-block;
+    position: relative;
+    height:100%;
+}        
+.logo>div:nth-child(2){
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    height:100%;
+}
+.logo>div:last-child{
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    height:100%;
+}
+.logo>div>h1{
+    padding:0;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.logo>div>ul{
+    width: 50%;
+    padding:0;
+    margin:0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+}
+.logo li{
+    width: 25%;
+    left:0;
+    display: inline-block;
+    height: 100%;
+    text-decoration: none;
+    font-size: 23px;
+
+}
+.menu span,.menu span>a{
+    
+    color:rgb(224, 235, 232);
+    transition:0.5s;
+}
+.menu span>a{
+    color:rgb(224, 235, 232);
+}
+.menu span,.menu span>a:hover{
+    color:rgb(28, 133, 105)
+}
+/*상단 메뉴바 끝, 메인페이지 시작*/
+.main_p{
+    
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.main_p >.main_name{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    background: rgba(128, 128, 128, 0.6);
+    height: 250px;
+    width: 1000px;
+    font-size:70px;
+    transform: translate(-50%,-35%);
+    font-weight: bolder;
+}
+.main_name span{
+    position: relative;
+    color: white;
+}
+.main_sub{
+    display: block;
+    font-weight: lighter;
+    font-size:20px;
+}
+.main_name>div>span:nth-child(2){
+    color:rgb(255, 99, 99)
+}
+.main_name>div{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.main_p i{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color:rgb(255, 99, 99);
+}
+.main_icon{
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+}
+.fa-angle-down{
+    animation: 2.3s jump_jump infinite ease-in-out;
+}
+@keyframes jump_jump{
+    0%{
+        transform: none; 
+    }
+    50%{
+        transform:translateY(-100px);
+    }
+        65%{
+        transform: none;
+    }
+    70%{
+        transform:translateY(-30px);
+    }
+    80%{
+        transform: none;
+    }
+}
+.main_p>img{
+    display: block;
+    height: auto;                
+    width: 100%;
+    opacity: 1;
+    -webkit-filter: grayscale(100%);
+    filter: lightgray;
+}
+.main_back.img_long{ /*메인페이지 크기 조절용*/
+    height: 100%;                
+    width: auto;
+}/*메인페이지 끝*/
+/*소개페이지 시작, 텝메뉴 시작*/
+#about table{
+    position: absolute;
+    right:0;
+    top:25%;
+}
+#about td{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 120px;
+    font-size: 50px;
+}
+#about td>span{
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+#about td>span:hover{
+    color:rgb(28, 133, 105)
+}/*텝메뉴 끝*/
+/*연락메뉴 시작*/
+#contact{
+    padding-bottom: 100px;
+    width: 100%;
+    display: block;
+    bottom:60px;
+    text-align: center ;
+    font-size: 25px;
+}
+#contact span{
+    display: block;
+    padding-bottom:10px;
+}/*연락메뉴 끝*/
+/*푸터메뉴 시작*/
+footer{
+    background: rgb(46, 186, 154);
+    position: absolute;
+    height: 60px;
+    width:100%;
+    bottom: 0%;
+    left:0%;
+}
+footer span{
+    color:white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+footer a{
+    color: white;
+}/*푸터 끝*/

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sul's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <style>
+        #about{
+            width:100%;
+        }
+        #about h2{
+            padding-top:7vh;
+        }
+        .wrap{
+            display: block;
+            height: 85vh;
+            width: 100%;
+            position: relative;
+        }
+        .id_card{
+            display: none;
+            width: 78%;
+            height: 50%;
+            position: absolute;
+            top: 20%;
+            color:black;
+        }
+        .id_card img{
+            width: 15%;
+            display: inline-block;
+            position: absolute;
+            left: 10%;
+            top:25%;
+        }
+        .id_card>div{
+            padding-right: 40px;
+            display: inline-block;
+            position: absolute;
+            font-size: 23px;
+            width: 66%;
+            right: 0;
+            top: 30%;
+            text-align-last: left;
+        }
+        .id_card h1{
+            font-size: 50px;
+        }
+        .id_card.active{
+            display: block;
+        }
+        .tap_menu.m_active{
+            color:rgb(28, 133, 105);
+        }
+        .id_card div{
+            display : block;
+            padding-top:0.5em;
+        }
+        
+    </style>
+    <script>
+        function main_resize(){
+            var win_ratio = window.innerHeight/window.innerWidth;
+            var main = document.getElementsByClassName("main_back");
+            if(win_ratio>1600/1066){
+                main[0].classList.add("img_long");
+            }else{
+                main[0].classList.remove("img_long");
+            }
+        }
+    </script>
+</head>
+<body onresize="main_resize()">
+    <header class="nav">
+        <div class="container">
+            <div class="logo">
+                <div>
+                    <img src="캐릭터.png" alt="Sul">
+                </div>
+                <div>        
+                    <h1>SSul's page</h1>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li><span><a href="#about">About</a></span></li>
+                        <li><span><a href="">Portfolio</a></span></li>
+                        <li><span><a href="#contact">Contact</a></span></li>
+                    </ul>            
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main_p">        
+        <img class="main_back" src="tobes.jpeg" alt="">
+        <div class="main_name">
+            <div>
+                <span>SSul </span><span>/</span><span> Sul Young Hwan</span>
+                <div></div>
+                <span class="main_sub">Front-End Developer</span>
+            </div>
+            
+        </div>  
+        <div class="main_icon">
+            <span><a href="#about"><i class="fas fa-angle-down fa-5x"></a></i></span>
+        </div>
+    </section>
+    <section id="about"> <!--내 소개, 할수있는것 이력 다 넣기-->
+       <div class="container">
+            <h2>About me</h2>
+            <div class="wrap">
+                <div class="id_card active">
+                    <h1>SSul</h1>
+                    <img id="jung"src="jung.jpg" alt="img">
+                    <div>
+                        <span>안녕하세요^^ 반갑습니다.</span>
+                        <div></div>
+                        <span>저는 88년생 Front-End Developer를 꿈꾸는 설영환이라고 합니다.</span>
+                        <div></div>
+                        <span>저는 마라톤을 1년에 1~2번정도 할정도로 움직이는 것을 좋아합니다.</span>
+                        <div></div>
+                        <span>하지만 저는 게임과 커피를 제일 좋아합니다.</span>
+                        <div></div>
+                        <span>게임은 주로 롤 하지만 실버에서 벗어난적이...ㅠ</span>
+                        <div></div>
+                        <span>노는 것 만큼이나 열정적으로 열심히 하겠습니다.</span>
+                    </div>
+                </div>
+                <div class="id_card">history</div>
+                <div class="id_card">i can do</div>
+                <table>
+                <tr>
+                    <td><span class="tap_menu m_active" onclick="about_tab(`0`)"><i class="far fa-address-card"></i>     SSul</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tap_menu" onclick="about_tab(`1`)"><i class="fas fa-archive"></i>   History</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tap_menu" onclick="about_tab(`2`)"><i class="fas fa-certificate"></i>    I can do</span></td>
+                </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="Portfolio">
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div><h2>Contact<h2></div>
+            <div><span>syhwan@kakao.com</span></div>
+            <div><span>010.6657.7514</span></div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
+        </div>
+    </footer>
+</body>
+</html>
