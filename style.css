@@ -120,7 +120,7 @@ header{
     overflow: hidden;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
 }
 .main_p >.main_name{
     display: inline-block;
