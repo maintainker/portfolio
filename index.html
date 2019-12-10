@@ -18,16 +18,16 @@
         }
         .wrap{
             display: block;
-            height: 85vh;
+            height: 75vh;
             width: 100%;
             position: relative;
         }
         .id_card{
             display: none;
-            width: 78%;
+            width: 80%;
             height: 50%;
             position: absolute;
-            top: 20%;
+            top: 2%;
             color:black;
         }
         .id_card img{
@@ -35,16 +35,16 @@
             display: inline-block;
             position: absolute;
             left: 10%;
-            top:25%;
+            top:50%;
         }
         .id_card>div{
             padding-right: 40px;
             display: inline-block;
             position: absolute;
-            font-size: 23px;
+            font-size: 18px;
             width: 66%;
             right: 0;
-            top: 30%;
+            top: 40%;
             text-align-last: left;
         }
         .id_card h1{
@@ -62,17 +62,6 @@
         }
         
     </style>
-    <script>
-        function main_resize(){
-            var win_ratio = window.innerHeight/window.innerWidth;
-            var main = document.getElementsByClassName("main_back");
-            if(win_ratio>1600/1066){
-                main[0].classList.add("img_long");
-            }else{
-                main[0].classList.remove("img_long");
-            }
-        }
-    </script>
 </head>
 <body onresize="main_resize()">
     <header class="nav">
