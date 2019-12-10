@@ -9,7 +9,7 @@ section{
     position: relative;
 }
 .container{
-    width:1240px;
+    width:1040px;
     height: 100%;
     display: block;
     position: relative;
@@ -25,9 +25,16 @@ h2{
 a{
     text-decoration: none;;
 }
+@font-face{
+    font-family: "nanumgothic";
+    src: url(NanumGothic.ttf) format("truetype");
+}
+body{
+    font-family: nanumgothic;
+}
 /*상단 메뉴바 시작*/
 header{
-    height: 150px;
+    height: 100px;
     width: 100%;
     background: rgb(46, 186, 154);
     position: fixed;
@@ -38,7 +45,7 @@ header{
 .nav.on{
     
     background: rgba(46, 186, 154,0.6);
-    height: 100px;
+    height: 70px;
 }
 .logo{
     height: 100%;
@@ -52,7 +59,7 @@ header{
     width: auto;
 }
 .logo>div:first-child{
-    width: 7%;
+    width: 9%;
     display: inline-block;
     position: relative;
     height:100%;
@@ -64,7 +71,7 @@ header{
     height:100%;
 }
 .logo>div:last-child{
-    width: 70%;
+    width: 68%;
     display: inline-block;
     position: relative;
     height:100%;
@@ -76,6 +83,7 @@ header{
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+    color:rgb(224, 235, 232);
 }
 .logo>div>ul{
     width: 50%;
@@ -92,7 +100,7 @@ header{
     display: inline-block;
     height: 100%;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 15px;
 
 }
 .menu span,.menu span>a{
@@ -120,8 +128,8 @@ header{
     top: 50%;
     background: rgba(128, 128, 128, 0.6);
     height: 250px;
-    width: 1000px;
-    font-size:70px;
+    width: 60%;
+    font-size:55px;
     transform: translate(-50%,-35%);
     font-weight: bolder;
 }
@@ -194,19 +202,19 @@ header{
 /*소개페이지 시작, 텝메뉴 시작*/
 #about table{
     position: absolute;
-    right:0;
-    top:25%;
+    right:-10%;
+    top:13%;
 }
 #about td{
     position: relative;
     display: block;
     width: 300px;
-    height: 120px;
-    font-size: 50px;
+    height: 80px;
+    font-size: 40px;
 }
 #about td>span{
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 0;
     transform: translateY(-50%);
     transition: 0.3s;
