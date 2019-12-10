@@ -19,3 +19,12 @@ function nav_chage(){
         Cl[0].classList.remove("on");
     }
 }
+function main_resize(){// main page resize
+    var win_ratio = window.innerHeight/window.innerWidth;
+    var main = document.getElementsByClassName("main_back");
+    if(win_ratio>1066/1600){
+        main[0].classList.add("img_long");
+    }else{
+        main[0].classList.remove("img_long");
+    }
+}
