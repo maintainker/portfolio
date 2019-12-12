@@ -22,6 +22,9 @@ h2{
     color:rgb(57, 164, 136);
     padding-top:10px;
 }
+h3{
+    font-size: 15px;
+}
 a{
     text-decoration: none;;
 }
@@ -297,6 +300,89 @@ header{
     text-align: left;            
     font-weight: bold;
 }
+.skill{
+    padding:0;
+    left:10%;
+}
+.skill li{
+    list-style: none;
+    margin:10px 0;
+}
+.skill .bar{
+    background: #353b48;
+    display: block;
+    width: 90%;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.bar span{
+    float: left;
+    height:2px;
+    background: rgb(252, 152, 152);
+}
+.html.active{
+    width:90%;
+    animation: html 1.5s;
+}
+.css.active{
+     width:70%;
+    animation: css 1.5s;
+}
+.javascript.active{
+    width:80%;
+    animation: javascript 1.5s;
+}
+.react.active{
+    width:10%;
+    animation: react 1.5s;
+}
+.algo.active{
+    width:80%;
+    animation: algo 1.5s;
+}
+@keyframes html{
+    0%{
+        width:0;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width:0;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes react{
+    0%{
+        width:0;
+    }
+    100%{
+        width:10%;
+    }
+}
+@keyframes algo{
+    0%{
+        width:0;
+    }
+    100%{
+        width:80%;
+    }
+}
+
 /*about 메뉴 끝*/
 /*연락메뉴 시작*/
 #contact{
