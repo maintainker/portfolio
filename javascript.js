@@ -8,6 +8,19 @@ function about_tab(int){//about tab
     }
     classname[int].classList.add("active");
     tab_name[int].classList.add("m_active");
+    if(int == 1){
+        document.getElementsByClassName("html")[0].classList.add("active");
+        document.getElementsByClassName("css")[0].classList.add("active");
+        document.getElementsByClassName("javascript")[0].classList.add("active");
+        document.getElementsByClassName("react")[0].classList.add("active");
+        document.getElementsByClassName("algo")[0].classList.add("active");
+    }else{
+        document.getElementsByClassName("html").classList.remove("active");
+        document.getElementsByClassName("css").classList.remove("active");
+        document.getElementsByClassName("javascript").classList.remove("active");
+        document.getElementsByClassName("react").classList.remove("active");
+        document.getElementsByClassName("algo").classList.remove("active");
+    }
 }
 document.addEventListener("scroll",nav_chage);// nav resize
 function nav_chage(){
