@@ -10,57 +10,6 @@
     <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <style>
-        #about{
-            width:100%;
-        }
-        #about h2{
-            padding-top:7vh;
-        }
-        .wrap{
-            display: block;
-            height: 75vh;
-            width: 100%;
-            position: relative;
-        }
-        .id_card{
-            display: none;
-            width: 80%;
-            height: 50%;
-            position: absolute;
-            top: 2%;
-            color:black;
-        }
-        .id_card img{
-            width: 15%;
-            display: inline-block;
-            position: absolute;
-            left: 10%;
-            top:50%;
-        }
-        .id_card>div{
-            padding-right: 40px;
-            display: inline-block;
-            position: absolute;
-            font-size: 18px;
-            width: 66%;
-            right: 0;
-            top: 40%;
-            text-align-last: left;
-        }
-        .id_card h1{
-            font-size: 50px;
-        }
-        .id_card.active{
-            display: block;
-        }
-        .tap_menu.m_active{
-            color:rgb(28, 133, 105);
-        }
-        .id_card div{
-            display : block;
-            padding-top:0.5em;
-        }
-        
     </style>
 </head>
 <body onresize="main_resize()">
@@ -68,7 +17,7 @@
         <div class="container">
             <div class="logo">
                 <div>
-                    <img src="캐릭터.png" alt="Sul">
+                    <img class="charic" src="캐릭터.png" alt="Sul">
                 </div>
                 <div>        
                     <h1>SSul's page</h1>
@@ -103,32 +52,54 @@
             <div class="wrap">
                 <div class="id_card active">
                     <h1>SSul</h1>
-                    <img id="jung"src="jung.jpg" alt="img">
-                    <div>
-                        <span>안녕하세요^^ 반갑습니다.</span>
-                        <div></div>
-                        <span>저는 88년생 Front-End Developer를 꿈꾸는 설영환이라고 합니다.</span>
-                        <div></div>
-                        <span>저는 마라톤을 1년에 1~2번정도 할정도로 움직이는 것을 좋아합니다.</span>
-                        <div></div>
-                        <span>하지만 저는 게임과 커피를 제일 좋아합니다.</span>
-                        <div></div>
-                        <span>게임은 주로 롤 하지만 실버에서 벗어난적이...ㅠ</span>
-                        <div></div>
-                        <span>노는 것 만큼이나 열정적으로 열심히 하겠습니다.</span>
-                    </div>
+                    <img class="jung"src="jung.jpg" alt="img">
+                    <table>
+                        <tr>
+                            <td>name</td>
+                            <td>설영환 (Sul Young Hwan)</td>
+                        </tr>
+                        <tr>
+                            <td>birth</td>
+                            <td>1988.05.06</td>
+                        </tr>
+                            <td>mail</td>
+                            <td>syhwan@kakao.com</td>
+                        <tr>
+                            <td>habby</td>
+                            <td>solve the problem, bike, boardgame</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="id_card">history</div>
-                <div class="id_card">i can do</div>
+                <div class="id_card">
+                        <h1>SKILL</h1>
+                        <ul>
+                            <li><span>Html</span></li>
+                            <li><span>Css</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>React</span></li>
+                            <li><span>Languege C</span></li>
+                            <li><span>Algorithm</span></li>
+                        </ul>
+                </div>
+                <div class="id_card"> <h1>History</h1>
+                    <ul>
+                        <li><span>Born in mapo, Seoul</span></li>
+                        <li><span>Grow from Gwangju to high school</span></li>
+                        <li><span>Graduated Univ.of.seoul</span></li>
+                        <li><span>Worked in academy as a math teacher</span></li>
+                        <li><span>Start studying Html, css, JS since November</span></li>
+                        <li><span>finishing first Web site(portfolio site) in December</span></li>
+                    </ul>
+                </div>
                 <table>
                 <tr>
                     <td><span class="tap_menu m_active" onclick="about_tab(`0`)"><i class="far fa-address-card"></i>     SSul</span></td>
                 </tr>
                 <tr>
-                    <td><span class="tap_menu" onclick="about_tab(`1`)"><i class="fas fa-archive"></i>   History</span></td>
+                    <td><span class="tap_menu" onclick="about_tab(`1`)"><i class="fas fa-certificate"></i>    SKILL</span></td>
                 </tr>
                 <tr>
-                    <td><span class="tap_menu" onclick="about_tab(`2`)"><i class="fas fa-certificate"></i>    I can do</span></td>
+                    <td><span class="tap_menu" onclick="about_tab(`2`)"><i class="fas fa-archive"></i>   History</span></td>
                 </tr>
                 </table>
             </div>
@@ -142,13 +113,14 @@
             <div><h2>Contact<h2></div>
             <div><span>syhwan@kakao.com</span></div>
             <div><span>010.6657.7514</span></div>
+            <div><a href="https://open.kakao.com/o/sMILgJJb">kakaoTalk (Click)</a></div>
         </div>
     </section>
     
     <footer>
-        <div class="container">
+      
             <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
-        </div>
+      
     </footer>
 </body>
 </html>
