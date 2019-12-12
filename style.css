@@ -25,18 +25,14 @@ h2{
 a{
     text-decoration: none;;
 }
-@font-face{
-    font-family: "nanumgothic";
-    src: url(NanumGothic.ttf) format("truetype");
-}
 body{
-    font-family: nanumgothic;
+    font-family: sans-serif;
 }
 /*상단 메뉴바 시작*/
 header{
     height: 100px;
     width: 100%;
-    background: rgb(46, 186, 154);
+    background:none;
     position: fixed;
     top:0;
     z-index: 5;
@@ -57,6 +53,12 @@ header{
     transform: translateY(-50%);
     height: 80%;
     width: auto;
+}
+.charic{
+    display:none;
+}
+.charic.on{
+    display: block;
 }
 .logo>div:first-child{
     width: 9%;
@@ -120,7 +122,7 @@ header{
     overflow: hidden;
     position: relative;
     height: 100vh;
-    width: 98vw;
+    width: 100%;
 }
 .main_p >.main_name{
     display: inline-block;
@@ -128,10 +130,11 @@ header{
     top: 50%;
     background: rgba(128, 128, 128, 0.6);
     height: 250px;
-    width: 60%;
+    width: 50%;
     font-size:55px;
     transform: translate(-50%,-35%);
     font-weight: bolder;
+    box-shadow: 0 20px 50px rgba(0, 0, 0,0.5);
 }
 .main_name span{
     position: relative;
@@ -177,13 +180,13 @@ header{
     50%{
         transform:translateY(-100px);
     }
-        65%{
+    60%{
         transform: none;
     }
-    70%{
+    65%{
         transform:translateY(-30px);
     }
-    80%{
+    75%{
         transform: none;
     }
 }
@@ -200,17 +203,18 @@ header{
     width: auto;
 }/*메인페이지 끝*/
 /*소개페이지 시작, 텝메뉴 시작*/
-#about table{
+#about>div>div>table{
     position: absolute;
     right:-10%;
-    top:13%;
+    top:20%;
 }
-#about td{
+#about>div>div>table td{
     position: relative;
     display: block;
     width: 300px;
     height: 80px;
     font-size: 40px;
+    cursor: pointer;
 }
 #about td>span{
     position: absolute;
@@ -222,6 +226,78 @@ header{
 #about td>span:hover{
     color:rgb(28, 133, 105)
 }/*텝메뉴 끝*/
+
+#about{
+    width:100%;
+}
+#about h2{
+    padding-top:9vh;
+}
+.wrap{
+    display: block;
+    height: 78vh;
+    width: 100%;
+    position: relative;
+}
+.id_card{
+    display: none;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 2%;
+    color:black;
+}
+.id_card img{
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top:43%;
+}
+.id_card>div{
+    padding-right: 40px;
+    display: inline-block;
+    position: absolute;
+    font-size: 18px;
+    width: 66%;
+    right: 0;
+    top: 45%;
+    text-align-last: left;
+}
+.id_card h1{
+    font-size: 50px;
+}
+.id_card.active{
+    display: block;
+}
+.tap_menu.m_active{
+    color:rgb(28, 133, 105);
+}
+.id_card div{
+    display : block;
+    padding-top:0.5em;
+}
+.id_card.active>table{
+    height: 60%;
+    position: absolute;
+    width: 70%;
+    right:5%;
+    padding-top:30px;
+}
+.id_card.active>table td{
+    display: inline-block;
+    height: 100%;
+    width: 45%;
+    text-align: left;
+}
+.id_card.active>table td:first-child{
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    text-align: left;            
+    font-weight: bold;
+}
+/*about 메뉴 끝*/
 /*연락메뉴 시작*/
 #contact{
     padding-bottom: 100px;
@@ -230,6 +306,9 @@ header{
     bottom:60px;
     text-align: center ;
     font-size: 25px;
+}
+#contact a{
+    color:black;
 }
 #contact span{
     display: block;
