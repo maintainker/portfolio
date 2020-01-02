@@ -10,6 +10,16 @@
     <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <style>
+        .id_card .history{
+            width: 80%;
+            text-align: left;
+        }
+        .id_card .history ul{
+            list-style: none;
+        }
+        .id_card .history li{
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body onresize="main_resize()">
@@ -49,7 +59,7 @@
     <section id="about"> <!--내 소개, 할수있는것 이력 다 넣기-->
        <div class="container">
             <div class="wrap">
-                <div class="id_card active">
+                <div class="id_card">
                     <h1>SSul</h1>
                     <img class="jung"src="image/jung.jpg" alt="img">
                     <table>
@@ -81,15 +91,17 @@
                             </ul>
                         </div>
                 </div>
-                <div class="id_card"> <h1>History</h1>
-                    <ul>
-                        <li><span>Born in mapo, Seoul in 1988</span></li>
-                        <li><span>Grow from Gwangju to high school</span></li>
-                        <li><span>Graduated Univ.of.seoul</span></li>
-                        <li><span>Worked in academy as a math teacher</span></li>
-                        <li><span>Start studying Html, css, JS since November</span></li>
-                        <li><span>finishing first Web site(portfolio site) in December</span></li>
-                    </ul>
+                <div class="id_card active"> <h1>History</h1>
+                    <div class="history">
+                        <ul>
+                            <li><span>Born in mapo, Seoul in 1988</span></li>
+                            <li><span>Grew up in Gwangju until high school</span></li>
+                            <li><span>Graduated Univ.of.seoul</span></li>
+                            <li><span>Worked in academy as a math teacher since 2013</span></li>
+                            <li><span>Start studying Html, css, JS since 2019 November</span></li>
+                            <li><span>Finishing first Web site(portfolio site) in 2020 December</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <table>
                 <tr>
