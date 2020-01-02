@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
     <style>
+        
     </style>
 </head>
 <body onresize="main_resize()">
@@ -17,14 +18,14 @@
         <div class="container">
             <div class="logo">
                 <div>
-                    <img class="charic" src="캐릭터.png" alt="Sul">
+                    <img class="charic" src="image/캐릭터.png" alt="Sul">
                 </div>
                 <div>        
                     <h1>SSul's page</h1>
                 </div>
                 <div>
                     <ul class="menu">
-                        <li><span><a href="#about">About</a></span></li>
+                        <li><span onclick="windowChange()">About</span></li>
                         <li><span><a href="">Portfolio</a></span></li>
                         <li><span><a href="#contact">Contact</a></span></li>
                     </ul>            
@@ -33,26 +34,25 @@
         </div>
     </header>
     <section class="main_p">        
-        <img class="main_back" src="tobes.jpeg" alt="">
+        <img class="main_back" src="image/tobes.jpeg" alt="">
         <div class="main_name">
             <div>
                 <span>SSul </span><span>/</span><span> Sul Young Hwan</span>
                 <div></div>
-                <span class="main_sub">Front-End Developer</span>
+                <span class="main_sub">Front-End Developer / Publisher / UI,UX Designer</span>
             </div>
             
         </div>  
         <div class="main_icon">
-            <span><a href="#about"><i class="fas fa-angle-down fa-5x"></a></i></span>
+            <span><i class="fas fa-angle-down fa-5x" onclick="windowChange()"></i></span>
         </div>
     </section>
     <section id="about"> <!--내 소개, 할수있는것 이력 다 넣기-->
        <div class="container">
-            <h2>About me</h2>
             <div class="wrap">
                 <div class="id_card active">
                     <h1>SSul</h1>
-                    <img class="jung"src="jung.jpg" alt="img">
+                    <img class="jung"src="image/jung.jpg" alt="img">
                     <table>
                         <tr>
                             <td>name</td>
@@ -106,8 +106,51 @@
             </div>
         </div>
     </section>
-    <section id="Portfolio">
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div class="preview">
 
+                        </div></td>
+                    <td>
+                        <div class="preview">
+
+                        </div></td>
+                    <td>
+                        <div class="preview">
+
+                        </div></td>
+                    <td>
+                        <div class="preview">
+
+                        </div></td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <div class="preview">
+
+                        </div></td>
+                    <td>
+                        <div class="preview">
+
+                        </div></td>
+                    <td id="PortfolSite">
+                        <picture class="preview" >
+                            <img src="image/portfolio.png" onclick="location.href='https://maintainker.github.io/portfolio/'"alt="">
+                        </picture>
+                        <h4>Portfolio Site</h4>
+                        <span>2019.12.7 ~ 12.24</span>
+                        <span>웹디자인 100% / 웹 퍼브리싱 100% / JQuery 0%</span>
+                        <a href="https://github.com/maintainker/portfolio">code : github (click)</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
     <section id="contact">
         <div class="container">
@@ -117,7 +160,6 @@
             <div><a href="https://open.kakao.com/o/sMILgJJb">kakaoTalk (Click)</a></div>
         </div>
     </section>
-    
     <footer>
       
             <span>ⓒ Copyright <a href="index.html">SSul</a>. All rights reserved.</span> 
