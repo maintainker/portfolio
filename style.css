@@ -62,10 +62,10 @@ header{
     height: 80%;
     width: auto;
 }
-.charic{
+.character{
     display:none;
 }
-.charic.on{
+.character.on{
     display: block;
 }
 .logo>div:first-child{

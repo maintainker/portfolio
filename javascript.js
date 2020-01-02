@@ -31,7 +31,7 @@ document.addEventListener("scroll",nav_chage);// nav resize
 function nav_chage(){
     var nav = window.scrollY || document.documentElement.scrollTop;
     var Cl =document.getElementsByClassName("nav");
-    var charic = document.getElementsByClassName("charic");
+    var charic = document.getElementsByClassName("character");
     if(nav > 0){
         Cl[0].classList.add("on");
         charic[0].classList.add("on");
