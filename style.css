@@ -442,7 +442,8 @@ header{
 #contact span{
     display: block;
     padding-bottom:10px;
-}/*연락메뉴 끝*/
+}
+/*연락메뉴 끝*/
 /*푸터메뉴 시작*/
 footer{
     background: rgb(46, 186, 154);

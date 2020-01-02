@@ -22,10 +22,24 @@ function about_tab(int){//about tab
         document.getElementsByClassName("algo")[0].classList.remove("active");
     }
 }
-function windowChange(){
-    var top=window.innerHeight;
-    window.scrollY = top;
-    document.documentElement.scrollTop = top;
+function windowChange(int){
+    var top;
+    var bottom;
+    if(int==1){
+        top=window.innerHeight;
+        window.scrollY = top;
+        document.documentElement.scrollTop = top;
+    }
+    if(int==2){
+        top=window.innerHeight*1.90;
+        window.scrollY = top;
+        document.documentElement.scrollTop = top;
+    }
+    if(int==3){
+        bottom=document.body.scrollHeight;
+        window.scrollY = bottom;
+        document.documentElement.scrollTop = bottom;
+    }
 }
 document.addEventListener("scroll",nav_chage);// nav resize
 function nav_chage(){
