@@ -4,12 +4,14 @@ html, body{
     text-align: center;
     background: rgb(224, 235, 232);
     position: relative;
+    transition: 0.3s;
 }
 section{
     position: relative;
+
 }
 .container{
-    width:1040px;
+    width:1040px;/*흠... 좁나??*/
     height: 100%;
     display: block;
     position: relative;
@@ -20,7 +22,11 @@ h2{
     display: block;
     font-size:60px;
     color:rgb(57, 164, 136);
-    padding-top:10px;
+    padding-top:50px;
+}
+h4{
+    margin:0;
+    font-size: 23px;
 }
 h3{
     font-size: 15px;
@@ -38,11 +44,10 @@ header{
     background:none;
     position: fixed;
     top:0;
-    z-index: 5;
+    z-index: 1;
     transition: 0.3s;
 }
 .nav.on{
-    
     background: rgba(46, 186, 154,0.6);
     height: 70px;
 }
@@ -106,17 +111,13 @@ header{
     height: 100%;
     text-decoration: none;
     font-size: 15px;
-
-}
-.menu span,.menu span>a{
-    
     color:rgb(224, 235, 232);
+}
+.menu li>span{
     transition:0.5s;
+    cursor: pointer;
 }
-.menu span>a{
-    color:rgb(224, 235, 232);
-}
-.menu span,.menu span>a:hover{
+.menu li>span:hover{
     color:rgb(28, 133, 105)
 }
 /*상단 메뉴바 끝, 메인페이지 시작*/
@@ -164,6 +165,7 @@ header{
     height: 100%;
     width: 100%;
     color:rgb(255, 99, 99);
+    cursor: pointer;
 }
 .main_icon{
     display: block;
@@ -233,9 +235,6 @@ header{
 #about{
     width:100%;
 }
-#about h2{
-    padding-top:9vh;
-}
 .wrap{
     display: block;
     height: 78vh;
@@ -247,7 +246,7 @@ header{
     width: 80%;
     height: 60%;
     position: absolute;
-    top: 2%;
+    top: 10%;
     color:black;
 }
 .id_card img{
@@ -255,7 +254,7 @@ header{
     display: inline-block;
     position: absolute;
     left: 10%;
-    top:43%;
+    top:55%;
 }
 .id_card>div{
     padding-right: 40px;
@@ -264,7 +263,7 @@ header{
     font-size: 18px;
     width: 66%;
     right: 0;
-    top: 45%;
+    top: 20;
     text-align-last: left;
 }
 .id_card h1{
@@ -284,6 +283,7 @@ header{
     height: 60%;
     position: absolute;
     width: 70%;
+    top:42%;
     right:5%;
     padding-top:30px;
 }
@@ -384,6 +384,49 @@ header{
 }
 
 /*about 메뉴 끝*/
+/*portfolio 시작*/
+#portfolio{
+    background:white;
+}
+#portfolio td{
+    display: inline-block;
+    position: relative;
+    background: rgb(224, 235, 232);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 230px;
+    height: 320px;
+    box-shadow: rgba(211,211,211,0.75) 5px 5px;
+}
+#portfolio table{
+    padding:0;
+    font-size:20px;
+    text-align: center;
+    display: inline-block;
+    left :50%;
+    margin-bottom:50px;
+}
+#portfolio td:first-child{
+    margin-left:0;
+}
+#portfolio .preview{
+    position: relative;
+    display: block;
+    width: 230px;
+    height: 170px;
+}
+#portfolio img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+#portfolio span,a{
+    margin-top: 5px;
+    display: block;
+    font-size: 15px;
+    color:black;
+}
+/*포트폴리오 끝*/
 /*연락메뉴 시작*/
 #contact{
     padding-bottom: 100px;
@@ -417,5 +460,6 @@ footer span{
     transform: translate(-50%,-50%);
 }
 footer a{
+    display: inline;
     color: white;
 }/*푸터 끝*/
