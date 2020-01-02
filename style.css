@@ -382,6 +382,16 @@ header{
         width:80%;
     }
 }
+.id_card .history{
+    width: 80%;
+    text-align: left;
+}
+.id_card .history ul{
+    list-style: none;
+}
+.id_card .history li{
+    margin-bottom: 5px;
+}
 
 /*about 메뉴 끝*/
 /*portfolio 시작*/
