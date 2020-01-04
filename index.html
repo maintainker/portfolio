@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="all.min.css">
     <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
+    <style>
+        #NavBar img{
+            position: absolute;
+            left: 0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    </style>
 </head>
 <body onresize="main_resize()">
     <header class="nav">
@@ -130,10 +138,16 @@
                 <tr>
                     <td>
                     </td>
-                    <td>
+                    <td id="NavBar">
                         <div class="preview">
-
-                        </div></td>
+                            <picture class="preview" >
+                                <img src="image/NavBar.jpg" onclick="location.href='https://maintainker.github.io/study11.23/index1.html'"alt="">
+                            </picture>
+                            <h4 fontsize ="18px">상단 nav bar</h4>
+                            <span>~2019.11.23</span>
+                            <span>연습1차/2차 메뉴 3차메뉴 + 로그인 + tab menu</span>
+                            <a href="https://github.com/maintainker/study11.23">code : github (click)</a>
+                        </div></td id="NavBar">
                     <td id="MineFinder">
                         <div class="preview">
                             <picture class="preview" >
