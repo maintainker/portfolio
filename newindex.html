@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="syle1.css">
+    <link rel="stylesheet" href="all.min.css">
+    <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+          font-family:Alliance;
+            src: url(Alliance.otf);
+        }
+        @font-face {
+          font-family:fairdisplay;
+            src: url('PlayfairDisplay.ttf');
+        }
+        @font-face {
+          font-family:Alliance2;
+            src: url('Alliance2.otf');
+        }
+        body{height: 100vh; margin: 0 auto;}
+        nav{
+            z-index: 1;
+            position: relative;
+            height: 100%; width: 350px;
+            background: rgb(51, 51, 51);
+            background-image: linear-gradient(to bottom, rgb(51, 51, 51),black);
+        }
+        #navi{
+            position: absolute;
+            bottom: 0;
+            width: 90%;
+            height: 550px;
+            padding: 5%;
+            color: white;
+        }
+        #navi header{
+            font-family: fairdisplay;
+            width: 72%; height: 30%; 
+            font-weight: bold;
+            font-size: 70px;
+            padding:0 14%;
+        }
+        #navi header span{
+            display: block;
+            margin: 0 auto;
+        }
+        #part{padding:0 14%; width: 72%; height: 50%;}
+        #part ul{ 
+            list-style: none;
+            padding:0;
+        } 
+        #part li{
+            font-family: Alliance2;
+            font-size: 25px;
+            padding-top: 17px;
+        }
+        #contact{
+            padding:0 14%;
+            width: 72%; height: 20%;
+            color: white;
+            font-size: 20px;
+
+        }
+        #contact i{
+            padding-right: 20px;
+        }
+        section{
+            z-index: 0;
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%; width: 70vw; background: rgb(121, 186, 248);
+            padding-left: 400px;
+        }
+        @media(max-width: 1350px){
+            nav{    
+                background: rgb(51, 51, 51);
+                width: 100%;
+                height:150px;
+            }
+            #navi{
+                width: 100%;
+                padding:0;
+                height: 100%;
+            }
+            #navi header{
+                height: 70%;
+            }
+            #part{display: none;}
+            #contact{height: 30%;}
+            section{
+                clear: both;
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="navi">
+            <header><span>SSul</span></header>
+            <div id="part">
+                <ul>
+                    <li>H<span>ome</span></li>
+                    <li>About</li>
+                    <li>Portfolio</li>
+                    <li>3</li>
+                </ul>
+            </div>
+            <div id="contact">
+                <i class="fab fa-github"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-comment" style="padding : 0;" ></i>
+            </div>
+        </div>
+    </nav>
+    <section></section>
+</body>
+</html>
