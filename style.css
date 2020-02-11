@@ -277,7 +277,7 @@ header{
 }
 .id_card div{
     display : block;
-    padding-top:0.5em;
+    padding-top:3.5em;
 }
 .id_card.active>table{
     height: 60%;
