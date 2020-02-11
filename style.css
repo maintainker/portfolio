@@ -211,7 +211,7 @@ header{
 #about>div>div>table{
     position: absolute;
     right:-10%;
-    top:20%;
+    top:34%;
 }
 #about>div>div>table td{
     position: relative;
@@ -254,7 +254,7 @@ header{
     display: inline-block;
     position: absolute;
     left: 10%;
-    top:55%;
+    top:66%;
 }
 .id_card>div{
     padding-right: 40px;
@@ -283,7 +283,7 @@ header{
     height: 60%;
     position: absolute;
     width: 70%;
-    top:42%;
+    top:58%;
     right:5%;
     padding-top:30px;
 }
