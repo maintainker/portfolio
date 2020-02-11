@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="all.min.css">
     <script src="https://kit.fontawesome.com/9b82ac151c.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
+    <style>
+        #NavBar img{
+            position: absolute;
+            left: 0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    </style>
 </head>
 <body onresize="main_resize()">
     <header class="nav">
@@ -128,18 +136,31 @@
                         </div></td>
                 </tr>
                 <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <div class="preview">
-
-                        </div></td>
-                    <td>
+                    <td id="responsible">
+                        <picture class="preview" >
+                            <img src="image/responsible.jpg" onclick="location.href='https://maintainker.github.io/newProject20200104/'"alt="">
+                        </picture>
+                        <h4 fontsize ="18px">반응형 웹템플릿</h4>
+                        <span>2020.1.4</span>
+                        <span>Youtube webstoryboy님 강좌 참조</span>
+                        <a href="https://github.com/maintainker/newProject20200104">code : github (click)</a>
+                    </td id="NavBar">
+                    <td id="NavBar">
                         <div class="preview">
                             <picture class="preview" >
-                                <img src="" onclick="location.href='https://maintainker.github.io/minefinder/'"alt="">
+                                <img src="image/NavBar.jpg" onclick="location.href='https://maintainker.github.io/study11.23/index1.html'"alt="">
                             </picture>
-                            <h4>지뢰찾기(minefinder)</h4>
+                            <h4 fontsize ="18px">상단 nav bar</h4>
+                            <span>~2019.11.23</span>
+                            <span>연습1차/2차 메뉴 3차메뉴 + 로그인 + tab menu</span>
+                            <a href="https://github.com/maintainker/study11.23">code : github (click)</a>
+                        </div></td id="NavBar">
+                    <td id="MineFinder">
+                        <div class="preview">
+                            <picture class="preview" >
+                                <img src="image/minefiner(임시).png" onclick="location.href='https://maintainker.github.io/minefinder/'"alt="">
+                            </picture>
+                            <h4 fontsize ="18px">지뢰찾기(minefinder)</h4>
                             <span>2020.1.3 ~</span>
                             <span>웹디자인 100% / 웹 퍼브리싱 100% / 알고리즘 100%</span>
                             <a href="https://github.com/maintainker/minefinder">code : github (click)</a>

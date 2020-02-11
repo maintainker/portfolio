@@ -436,6 +436,10 @@ header{
     font-size: 15px;
     color:black;
 }
+#responsible img{
+    height: 100%;
+    width : 100%;
+}
 /*포트폴리오 끝*/
 /*연락메뉴 시작*/
 #contact{
